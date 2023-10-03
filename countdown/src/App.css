@@ -1,0 +1,120 @@
+/* App.css */
+.body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.app-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./Fireworks.png') center/cover no-repeat; /* Replace with your image path */
+  opacity: 1; /* Adjust opacity as needed */
+}
+
+.content {
+  z-index: 1;
+  text-align: center;
+  color: #fff; /* Adjust text color */
+}
+
+.countdown-text {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+}
+
+.countdown-item {
+  margin: 0 10px;
+}
+
+.countdown-value {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.countdown-label {
+  font-size: 14px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 2300px) {
+  .countdown-text {
+    font-size: 60px;
+  }
+
+  .countdown-value {
+    font-size: 44px;
+  }
+
+  .countdown-label {
+    font-size: 35px;
+  }
+}
+@media (max-width: 1508px) {
+  .countdown-text {
+    font-size: 40px;
+  }
+
+  .countdown-value {
+    font-size: 38px;
+  }
+
+  .countdown-label {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1008px) {
+  .countdown-text {
+    font-size: 26px;
+  }
+
+  .countdown-value {
+    font-size: 30px;
+  }
+
+  .countdown-label {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .countdown-text {
+    font-size: 20px;
+  }
+
+  .countdown-value {
+    font-size: 24px;
+  }
+
+  .countdown-label {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown-text {
+    font-size: 18px;
+  }
+
+  .countdown-value {
+    font-size: 20px;
+  }
+
+  .countdown-label {
+    font-size: 10px;
+  }
+}
